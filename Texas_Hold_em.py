@@ -59,34 +59,36 @@ while True:
     play = input()
     if play == "quit":
         break
-    player_hand = []
+    hero = []
+    villian_1 = []
     board = []
     discarded = []
     random.shuffle(deck_of_cards)
     print("Let's play!")
     deal(1, deck_of_cards, discarded)
-    deal(2, deck_of_cards, player_hand)
-    show_player_hand(player_hand)
+    deal(2, deck_of_cards, hero)
+    deal(2, deck_of_cards, villian_1)
+    show_player_hand(hero)
     play = input("Play or fold?")
     if play == "fold":
-        deck_of_cards += discarded + board + player_hand
+        deck_of_cards += discarded + board + hero + villian_1
         continue
     deal(1, deck_of_cards, discarded)
     deal(3, deck_of_cards, board)
-    state_of_game(player_hand, board)
+    state_of_game(hero, board)
     play = input("Play or fold?")
     if play == "fold":
-        deck_of_cards += discarded + board + player_hand
+        deck_of_cards += discarded + board + hero + villian_1
         continue
     deal(1, deck_of_cards, discarded)
     deal(1, deck_of_cards, board)
-    state_of_game(player_hand, board)
+    state_of_game(hero, board)
     play = input("Play or fold?")
     if play == "fold":
-        deck_of_cards += discarded + board + player_hand
+        deck_of_cards += discarded + board + hero + villian_1
         continue
     deal(1, deck_of_cards, discarded)
     deal(1, deck_of_cards, board)
-    state_of_game(player_hand, board)
+    state_of_game(hero, board, villian_1)
 
-    deck_of_cards += discarded + board + player_hand
+    deck_of_cards += discarded + board + hero + villian_1
