@@ -29,9 +29,12 @@ def deal(howmany, deck, list):
     return list
 
 
-def show_player_hand(hand_list):
+def show_player_hand(hand_list, player):
     # show the player's hand
-    print("Your hand".center(22, "-"))
+    if player == "hero":
+        print("Your hand".center(22, "-"))
+    else:
+        print("Villian's hand".center(22, "-"))
     for card in hand_list:
         print(str(card[0]) + " of " + card[1])
     print()
@@ -45,9 +48,14 @@ def show_the_board(board_list):
     print()
 
 
-def state_of_game(player_hand, board):
+def state_of_game(player_hand, villian_hand, board,show_villian):
     # combines show_the_board and show_player_hand_function into one
-    show_player_hand(player_hand)
+    # show villians hand is show_villian is set to "y"
+    show_player_hand(player_hand, "hero")
+    if show_villian == "y":
+        show_player_hand(villian_hand,"villian")
+    else:
+        pass
     show_the_board(board)
 
 
@@ -68,27 +76,27 @@ while True:
     deal(1, deck_of_cards, discarded)
     deal(2, deck_of_cards, hero)
     deal(2, deck_of_cards, villian_1)
-    show_player_hand(hero)
+    show_player_hand(hero,"hero")
     play = input("Play or fold?")
     if play == "fold":
         deck_of_cards += discarded + board + hero + villian_1
         continue
     deal(1, deck_of_cards, discarded)
     deal(3, deck_of_cards, board)
-    state_of_game(hero, board)
+    state_of_game(hero,villian_1, board, "n")
     play = input("Play or fold?")
     if play == "fold":
         deck_of_cards += discarded + board + hero + villian_1
         continue
     deal(1, deck_of_cards, discarded)
     deal(1, deck_of_cards, board)
-    state_of_game(hero, board)
+    state_of_game(hero,villian_1, board,"n")
     play = input("Play or fold?")
     if play == "fold":
         deck_of_cards += discarded + board + hero + villian_1
         continue
     deal(1, deck_of_cards, discarded)
     deal(1, deck_of_cards, board)
-    state_of_game(hero, board, villian_1)
+    state_of_game(hero,villian_1, board, "y")
 
     deck_of_cards += discarded + board + hero + villian_1
