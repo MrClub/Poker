@@ -31,6 +31,8 @@ def highest_card(heros_hand,villians_hand):
     heros_lowest = 0
     villians_highest = 0
     villians_lowest = 0
+    sorted(heros_hand)
+    sorted(villians_hand)
     for card in hero_hand:
         if card[0] > heros_highest:
             heros_lowest = heros_highest
@@ -45,19 +47,16 @@ def highest_card(heros_hand,villians_hand):
             villians_lowest = card[0]
 
     if heros_highest > villians_highest:
-        print("Hero wins with:", hero_hand)
+        print("Hero wins with:", heros_hand)
     elif villians_highest > heros_highest:
-        print("Villian wins with:", villian_hand)
+        print("Villian wins with:", villians_hand)
     else:
         if heros_lowest > villians_lowest:
-            print("Hero wins with:", hero_hand)
+            print("Hero wins with:", heros_hand)
         else:
             if villians_lowest > heros_lowest:
-                print("Villian wins with:", villian_hand)
+                print("Villian wins with:", villians_hand)
             else:
                 print("Split Pot")
 
 highest_card(hero_hand,villian_hand)
-
-
-print(len(deck_of_cards))
