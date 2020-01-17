@@ -20,50 +20,7 @@ deck_builder("Spades", deck_of_cards)
 
 print(deck_of_cards)
 
-def hand_ranking(player_hand,board):
-    # this will rank the hand. https://en.wikipedia.org/wiki/List_of_poker_hands
-    # Straight Flush
-    # Four of a Kind
-    # Full House
-    # Flush
-    # Straight
-    # Three of a Kind
-    # Two Pair
-    # One Pair
-    # High Card
 
-    hand_ranks = {}
-    board +=player_hand
-    board = sorted(board)
-    print(board)
-    for e in board:
-        #this organises a dictionary and counts the values of the hands
-        for n in e:
-            if n not in hand_ranks:
-                hand_ranks[n]=0
-            hand_ranks[n] +=1
-    print(hand_ranks)
-    pairs = 0
-    threes = 0
-    for entry in hand_ranks:
-        # this figures out the highest hand ranking by iterating through the dictionary
-        if hand_ranks[entry] == 4:
-            return print("Four of a Kind of " + str(entry) +"'s")
-        if hand_ranks[entry] == 5:
-            return print("Flush of " + entry)
-        if hand_ranks[entry] == 3:
-            threes += 1
-        if hand_ranks[entry] == 2:
-            pairs += 1
-
-        if threes ==1 and pairs >=1:
-            return print("Full House")
-
-
-
-test_deck = [[2, 'Diamonds'],[2, 'Hearts']]
-test_board = [[8, 'Hearts'], [5, 'Hearts'], [4, 'Hearts'], [2, 'Spades'],[2, 'Clubs']]
-hand_ranking(test_deck,test_board)
 
 def deal(howmany, deck, list):
     # deals how many cards you want to a selected list
@@ -118,10 +75,16 @@ while True:
     deal(3, deck_of_cards, board)
     state_of_game(player_hand, board)
     play = input("Play or fold?")
+    if play == "fold":
+        deck_of_cards += discarded + board + player_hand
+        continue
     deal(1, deck_of_cards, discarded)
     deal(1, deck_of_cards, board)
     state_of_game(player_hand, board)
     play = input("Play or fold?")
+    if play == "fold":
+        deck_of_cards += discarded + board + player_hand
+        continue
     deal(1, deck_of_cards, discarded)
     deal(1, deck_of_cards, board)
     state_of_game(player_hand, board)
