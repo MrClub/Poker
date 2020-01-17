@@ -5,18 +5,15 @@ import random
 deck_of_cards = []
 
 
-def deck_builder(suit, list):
+def deck_builder(list):
     # builds the deck because I'm too lazy to type everything out
-    suit_list = []
-    for n in range(2, 15):
-        list.append([n, suit])
+    suit_list = ["Diamonds","Hearts","Clubs","Spades"]
+    for suit in suit_list:
+        for n in range(2, 15):
+            list.append([n, suit])
+    random.shuffle(list)
     return list
 
-
-deck_builder("Diamonds", deck_of_cards)
-deck_builder("Hearts", deck_of_cards)
-deck_builder("Clubs", deck_of_cards)
-deck_builder("Spades", deck_of_cards)
 
 # test
 

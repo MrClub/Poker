@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8cc4d51-a234-49ec-b450-6f0ae6ec6ed6" name="Default Changelist" comment="Testing on a straight checker">
-      <change afterPath="$PROJECT_DIR$/dealer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/highest_card_rank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dealer.py" beforeDir="false" afterPath="$PROJECT_DIR$/dealer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/highest_card_rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/highest_card_rank.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,12 +68,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1341" />
+          <entry key="py" value="1458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="1341" />
+          <entry key="Python" value="1458" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -99,23 +99,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dealer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="252">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/highest_card_rank.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
+            <state relative-caret-position="273">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="e#159#172#0" expanded="true" />
-                <marker date="1579291093939" expanded="true" signature="831:1721" ph="..." />
+                <marker date="1579291576216" expanded="true" signature="872:1762" ph="..." />
               </folding>
             </state>
           </provider>
@@ -166,8 +166,8 @@
         <option value="$PROJECT_DIR$/straight_tester.py" />
         <option value="$PROJECT_DIR$/Hand_ranking.py" />
         <option value="$PROJECT_DIR$/Texas_Hold_em.py" />
-        <option value="$PROJECT_DIR$/dealer.py" />
         <option value="$PROJECT_DIR$/highest_card_rank.py" />
+        <option value="$PROJECT_DIR$/dealer.py" />
       </list>
     </option>
   </component>
@@ -421,21 +421,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dealer.py">
+    <entry file="file://$PROJECT_DIR$/highest_card_rank.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="273">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+          <folding>
+            <element signature="e#159#172#0" expanded="true" />
+            <marker date="1579291576216" expanded="true" signature="872:1762" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/highest_card_rank.py">
+    <entry file="file://$PROJECT_DIR$/dealer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="56" column="32" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
-          <folding>
-            <element signature="e#159#172#0" expanded="true" />
-            <marker date="1579291093939" expanded="true" signature="831:1721" ph="..." />
-          </folding>
+        <state relative-caret-position="252">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

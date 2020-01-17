@@ -7,10 +7,11 @@ import dealer
 
 deck_of_cards = []
 
-dealer.deck_builder("Diamonds", deck_of_cards)
+"""dealer.deck_builder("Diamonds", deck_of_cards)
 dealer.deck_builder("Hearts", deck_of_cards)
 dealer.deck_builder("Clubs", deck_of_cards)
-dealer.deck_builder("Spades", deck_of_cards)
+dealer.deck_builder("Spades", deck_of_cards)"""
+dealer.deck_builder(deck_of_cards)
 
 print(deck_of_cards)
 print(len(deck_of_cards))
