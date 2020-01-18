@@ -15,21 +15,41 @@ dealer.deal(2,deck_of_cards,villian_hole)
 dealer.deal(5,deck_of_cards,community_cards)
 
 def straight_check(hole_cards,community_cards):
+    #finds best straight and returns, else returns empty list
     merged_cards = sorted(hole_cards + community_cards)
     count = 0
     straight_number = merged_cards[0][0]
+    straight_list =[]
     print(merged_cards)
     for card in merged_cards:
         if card[0] == straight_number + 1:
             count +=1
             straight_number = card[0]
-            if count == 4:
-                print("This is a straight")
-                continue
+            straight_list.append(card)
         else:
+            if count >= 4:
+                continue
             count = 0
             straight_number = card[0]
-    print("no straight")
+            straight_list =[card]
+    print(straight_list)
+    print(len(straight_list))
+    # below check the straight length and trims it to the best five
+    if len(straight_list) < 5:
+        straight_list =[]
+    if len(straight_list) == 6:
+        straight_list = sorted(straight_list, reverse=True)
+        straight_list.pop()
+    if len(straight_list) == 7:
+        straight_list = sorted(straight_list, reverse=True)
+        straight_list.pop()
+        straight_list.pop()
+    print(straight_list)
+    return straight_list
 
 
-straight_check(hero_hole,community_cards)
+
+test_hole = [[2, 'Hearts'], [3, 'Hearts']]
+test_community = [[4, 'Hearts'], [5, 'Hearts'], [6, 'Diamonds'], [7, 'Clubs'], [8, 'Spades'],]
+#straight_check(hero_hole,community_cards)
+straight_check(test_hole,test_community)
