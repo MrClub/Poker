@@ -43,11 +43,18 @@ def quads_sets_pairs_ranking(heros_quads_sets_pairs,
                              villians_quads_sets_pairs):
     # this will rank the quads,sets and pairs.
     if len(heros_quads_sets_pairs) == 4:
-        #for card in heros_quads_sets_pairs:
+        if quads_or_two_pair_check(heros_quads_sets_pairs):
+            print("Hero has quads")
+        else:
+            print("Hero has two pair")
 
-        print("Hero has two pair or quads")
+
     if len(villians_quads_sets_pairs) == 4:
-        print("Villian has two pair or quads")
+        if quads_or_two_pair_check(villians_quads_sets_pairs):
+            print("Villian has quads")
+        else:
+            print("Villian has two pair")
+
     if len(heros_quads_sets_pairs) == 3:
         print("Hero has a set")
     if len(villians_quads_sets_pairs) == 3:
@@ -82,7 +89,6 @@ hero_madehand, villian_madehand = quads_sets_pairs_check(heros_hand, villians_ha
 
 quads_sets_pairs_ranking(hero_madehand,villian_madehand)
 
-quads_or_two_pair_check([[10, 'Diamonds'], [10, 'Spades'], [11, 'Spades'], [11, 'Diamonds']])
-
+#quads_or_two_pair_check([[10, 'Diamonds'], [10, 'Spades'], [11, 'Spades'], [11, 'Diamonds']])
 #quads_sets_pairs_check(test_hero, test_villian, test_community)
 
