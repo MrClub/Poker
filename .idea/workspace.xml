@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8cc4d51-a234-49ec-b450-6f0ae6ec6ed6" name="Default Changelist" comment="Testing on a straight checker">
-      <change afterPath="$PROJECT_DIR$/quads_sets_pairs_checker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/highest_card_rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/highest_card_rank.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quads_sets_pairs_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/quads_sets_pairs_checker.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,25 +57,25 @@
     <session id="1314320671">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="24" />
-          <entry key="py" value="2562" />
+          <entry key="py" value="3480" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="2562" />
+          <entry key="Python" value="3480" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -97,7 +96,7 @@
         <entry file="file://$PROJECT_DIR$/Texas_Hold_em.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -105,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dealer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="315">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -114,11 +113,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/highest_card_rank.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1302">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="1281">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
               <folding>
                 <element signature="e#159#172#0" expanded="true" />
-                <marker date="1579292114264" expanded="true" signature="921:1813" ph="..." />
               </folding>
             </state>
           </provider>
@@ -127,11 +125,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quads_sets_pairs_checker.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+            <state relative-caret-position="163">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
               <folding>
                 <element signature="e#96#109#0" expanded="true" />
-                <marker date="1579296213043" expanded="true" signature="691:1689" ph="..." />
+                <marker date="1579341193810" expanded="true" signature="1487:1492" ph="..." />
+                <marker date="1579341193810" expanded="true" signature="2256:2261" ph="..." />
+                <marker date="1579341193810" expanded="true" signature="2256:2581" ph="..." />
               </folding>
             </state>
           </provider>
@@ -185,6 +185,7 @@
         <option value="$PROJECT_DIR$/dealer.py" />
         <option value="$PROJECT_DIR$/highest_card_rank.py" />
         <option value="$PROJECT_DIR$/highest_pair.py" />
+        <option value="$PROJECT_DIR$/quads_sets_pairs_checker.py" />
       </list>
     </option>
   </component>
@@ -198,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -210,6 +210,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -228,7 +229,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.highest_pair">
+  <component name="RunManager" selected="Python.quads_sets_pairs_checker">
     <configuration name="Hand_ranking" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Poker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -313,7 +314,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="straight_tester" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="quads_sets_pairs_checker" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Poker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -325,7 +326,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/straight_tester.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/quads_sets_pairs_checker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -335,19 +336,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.straight_tester" />
       <item itemvalue="Python.Texas_Hold_em" />
       <item itemvalue="Python.Hand_ranking" />
       <item itemvalue="Python.highest_card_rank" />
       <item itemvalue="Python.highest_pair" />
+      <item itemvalue="Python.quads_sets_pairs_checker" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.quads_sets_pairs_checker" />
         <item itemvalue="Python.highest_pair" />
         <item itemvalue="Python.highest_card_rank" />
         <item itemvalue="Python.Hand_ranking" />
         <item itemvalue="Python.Texas_Hold_em" />
-        <item itemvalue="Python.straight_tester" />
       </list>
     </recent_temporary>
   </component>
@@ -429,11 +430,34 @@
     <option name="LAST_COMMIT_MESSAGE" value="Testing on a straight checker" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/Hand_ranking.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Texas_Hold_em.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dealer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/highest_card_rank.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1281">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#159#172#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -447,45 +471,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Hand_ranking.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="14" lean-forward="true" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Texas_Hold_em.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dealer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/highest_card_rank.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1302">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#159#172#0" expanded="true" />
-            <marker date="1579292114264" expanded="true" signature="921:1813" ph="..." />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quads_sets_pairs_checker.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
+        <state relative-caret-position="163">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
           <folding>
             <element signature="e#96#109#0" expanded="true" />
-            <marker date="1579296213043" expanded="true" signature="691:1689" ph="..." />
+            <marker date="1579341193810" expanded="true" signature="1487:1492" ph="..." />
+            <marker date="1579341193810" expanded="true" signature="2256:2261" ph="..." />
+            <marker date="1579341193810" expanded="true" signature="2256:2581" ph="..." />
           </folding>
         </state>
       </provider>
