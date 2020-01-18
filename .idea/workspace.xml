@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8cc4d51-a234-49ec-b450-6f0ae6ec6ed6" name="Default Changelist" comment="Testing on a straight checker">
-      <change beforePath="$PROJECT_DIR$/straight_tester.py" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/straight_check.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,23 +68,23 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="24" />
-          <entry key="py" value="4522" />
+          <entry key="py" value="5061" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="24" />
-          <entry key="Python" value="4522" />
+          <entry key="Python" value="5061" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="5" />
+          <entry key="py" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="5" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
     </session>
@@ -136,7 +136,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flush_check.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="142">
@@ -144,6 +144,19 @@
               <folding>
                 <element signature="e#31#44#0" expanded="true" />
                 <marker date="1579344349116" expanded="true" signature="338:343" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/straight_check.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+              <folding>
+                <element signature="e#33#46#0" expanded="true" />
+                <marker date="1579346351205" expanded="true" signature="343:348" ph="..." />
               </folding>
             </state>
           </provider>
@@ -187,6 +200,7 @@
         <option value="$PROJECT_DIR$/quads_sets_pairs_checker.py" />
         <option value="$PROJECT_DIR$/flush_check.py" />
         <option value="$PROJECT_DIR$/straight_tester.py" />
+        <option value="$PROJECT_DIR$/straight_check.py" />
       </list>
     </option>
   </component>
@@ -230,28 +244,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.flush_check">
-    <configuration name="Hand_ranking" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Poker" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Hand_ranking.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.straight_check">
     <configuration name="flush_check" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Poker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -336,20 +329,41 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="straight_check" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Poker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/straight_check.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.Hand_ranking" />
       <item itemvalue="Python.highest_card_rank" />
       <item itemvalue="Python.highest_pair" />
       <item itemvalue="Python.quads_sets_pairs_checker" />
       <item itemvalue="Python.flush_check" />
+      <item itemvalue="Python.straight_check" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.straight_check" />
         <item itemvalue="Python.flush_check" />
         <item itemvalue="Python.quads_sets_pairs_checker" />
         <item itemvalue="Python.highest_pair" />
         <item itemvalue="Python.highest_card_rank" />
-        <item itemvalue="Python.Hand_ranking" />
       </list>
     </recent_temporary>
   </component>
@@ -497,6 +511,17 @@
           <folding>
             <element signature="e#31#44#0" expanded="true" />
             <marker date="1579344349116" expanded="true" signature="338:343" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/straight_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+          <folding>
+            <element signature="e#33#46#0" expanded="true" />
+            <marker date="1579346351205" expanded="true" signature="343:348" ph="..." />
           </folding>
         </state>
       </provider>
