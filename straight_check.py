@@ -1,4 +1,6 @@
 # this will test for straights.
+# TODO: Make straight_check.py detect wheel straights i.e ace,2,3,4,5
+# TODO: Write straight_check function which can tell which player has the higher straight ie straight_rank
 
 import dealer
 import random
@@ -15,7 +17,7 @@ dealer.deal(2,deck_of_cards,villian_hole)
 dealer.deal(5,deck_of_cards,community_cards)
 
 def straight_check(hole_cards,community_cards):
-    #finds best straight and returns, else returns empty list
+    #finds best straight and returns it, else returns empty list
     merged_cards = sorted(hole_cards + community_cards)
     count = 0
     straight_number = merged_cards[0][0]
@@ -29,6 +31,7 @@ def straight_check(hole_cards,community_cards):
         else:
             if count >= 4:
                 continue
+                # we can't have more than 2 straights in 7 cards so it's okay to continue
             count = 0
             straight_number = card[0]
             straight_list =[card]
