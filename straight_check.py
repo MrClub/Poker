@@ -1,5 +1,4 @@
 # this will test for straights.
-# TODO: Make straight_check.py detect wheel straights i.e ace,2,3,4,5
 # TODO: Write straight_check function which can tell which player has the higher straight ie straight_rank
 
 import dealer
@@ -24,6 +23,9 @@ def straight_check(hole_cards,community_cards):
     straight_list =[]
     print(merged_cards)
     for card in merged_cards:
+        if wheel_straight_check(merged_cards,straight_list):
+            straight_list.append(merged_cards[-1])
+            break
         if card[0] == straight_number + 1:
             count +=1
             straight_number = card[0]
@@ -35,6 +37,7 @@ def straight_check(hole_cards,community_cards):
             count = 0
             straight_number = card[0]
             straight_list =[card]
+
     print(straight_list)
     print(len(straight_list))
     # below check the straight length and trims it to the best five
@@ -50,9 +53,18 @@ def straight_check(hole_cards,community_cards):
     print(straight_list)
     return straight_list
 
-
+def wheel_straight_check(merged_cards,straight_list):
+    if len(straight_list) == 4:  # this is to check if 2,3,4,5 and there is an ace and no 6. ie wheel straight
+        if straight_list[0][0] == 2:
+            for card in merged_cards:
+                if card[0] == 6:
+                    return False
+            if merged_cards[-1][0] ==14:
+                return True
+    else:
+        return False
 
 test_hole = [[2, 'Hearts'], [3, 'Hearts']]
-test_community = [[4, 'Hearts'], [5, 'Hearts'], [6, 'Diamonds'], [7, 'Clubs'], [8, 'Spades'],]
+test_community = [[4, 'Hearts'], [5, 'Hearts'], [5, 'Diamonds'], [9, 'Clubs'], [14, 'Spades'],]
 #straight_check(hero_hole,community_cards)
 straight_check(test_hole,test_community)

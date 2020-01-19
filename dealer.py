@@ -1,4 +1,7 @@
 # This is a place to add all my functions
+# TODO Straight Flush detection
+# Todo Full House detection
+# TODO betting
 
 import random
 
