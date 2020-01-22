@@ -65,8 +65,14 @@ def wheel_straight_check(merged_cards,straight_list):
     else:
         return False
 
-#def compare_straights(straight_one, straight_two):
+def compare_straights(straight_one, straight_two):
     # compares two straights and returns the best
+    if straight_one[0][0] > straight_two[0][0]:
+        return straight_one
+    elif straight_two[0][0] > straight_one[0][0]:
+        return straight_two
+    else:
+        return []
 
 test_hole = [[2, 'Hearts'], [3, 'Hearts']]
 test_community = [[4, 'Hearts'], [5, 'Hearts'], [6, 'Diamonds'], [8, 'Clubs'], [13, 'Spades'],]
