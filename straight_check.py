@@ -50,6 +50,7 @@ def straight_check(hole_cards,community_cards):
         straight_list = sorted(straight_list, reverse=True)
         straight_list.pop()
         straight_list.pop()
+    straight_list=sorted(straight_list,reverse=True)
     print(straight_list)
     return straight_list
 
@@ -64,7 +65,10 @@ def wheel_straight_check(merged_cards,straight_list):
     else:
         return False
 
+#def compare_straights(straight_one, straight_two):
+    # compares two straights and returns the best
+
 test_hole = [[2, 'Hearts'], [3, 'Hearts']]
-test_community = [[4, 'Hearts'], [5, 'Hearts'], [5, 'Diamonds'], [9, 'Clubs'], [14, 'Spades'],]
-#straight_check(hero_hole,community_cards)
+test_community = [[4, 'Hearts'], [5, 'Hearts'], [6, 'Diamonds'], [8, 'Clubs'], [13, 'Spades'],]
+straight_check(hero_hole,community_cards)
 straight_check(test_hole,test_community)
