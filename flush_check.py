@@ -1,4 +1,5 @@
 # This will check for flushes
+# TODO write something to rank flushes
 
 import dealer
 import random
@@ -13,35 +14,59 @@ dealer.deal(2,deck_of_cards,villian_hole)
 dealer.deal(5,deck_of_cards,community_cards)
 
 def flush_check(hole_cards,community_cards):
-    diamonds = 0
-    hearts = 0
-    spades = 0
-    clubs = 0
-    for card in hole_cards:
+    # checks for flush, if more than five cards returns best.
+    diamonds = []
+    hearts = []
+    spades = []
+    clubs = []
+    merged_cards = sorted(hole_cards,community_cards)
+    for card in merged_cards:
         if card[1] == "Diamonds":
-            diamonds += 1
+            diamonds.append(card)
         elif card[1] == "Hearts":
-            hearts +=1
+            hearts.append(card)
         elif card[1] == "Spades":
-            spades += 1
+            spades.append(card)
         else:
-            clubs +=1
-    for card in community_cards:
-        if card[1] == "Diamonds":
-            diamonds += 1
-        elif card[1] == "Hearts":
-            hearts +=1
-        elif card[1] == "Spades":
-            spades += 1
-        else:
-            clubs +=1
+            clubs.append(card)
+
     print(" Diamonds",diamonds,"\n",
           "Hearts",hearts,"\n",
           "Spades",spades,"\n",
           "Clubs",clubs)
-    if diamonds >= 5 or hearts >= 5 or spades >= 5 or clubs >= 5:
-        print("There is a flush")
-        return True
+
+    if len(diamonds) >= 5:
+        diamonds = sorted(diamonds,reverse=True)
+        if len(diamonds) == 6 or len(diamonds) == 7:
+            diamonds = flush_ranking(diamonds)
+        return diamonds
+    if len(hearts) >= 5:
+        hearts = sorted(hearts,reverse=True)
+        if len(hearts) == 6 or len(hearts) == 7:
+            hearts = flush_ranking(hearts)
+        return hearts
+    if len(spades) >= 5:
+        spades = sorted(spades,reverse=True)
+        if len(spades) == 6 or len(spades) == 7:
+            spades = flush_ranking(spades)
+        return spades
+    if len(clubs) >= 5:
+        clubs = sorted(clubs,reverse=True)
+        if len(clubs) == 6 or len(clubs) == 7:
+            clubs = flush_ranking(clubs)
+        return clubs
+    return []
+
+
+
+def flush_ranking(flush_list):
+    # take a flush of 5 greater cards and trims it to best five
+    if len(flush_list) ==6:
+        flush_list.pop()
+    if len(flush_list) == 7:
+        flush_list.pop()
+        flush_list.pop()
+    return flush_list
 
 flush_check(hero_hole,community_cards)
 flush_check(villian_hole,community_cards)

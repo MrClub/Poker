@@ -1,5 +1,5 @@
 # this will test for straights.
-# TODO: Write straight_check function which can tell which player has the higher straight ie straight_rank
+
 
 import dealer
 import random
