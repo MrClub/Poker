@@ -19,7 +19,7 @@ def flush_check(hole_cards,community_cards):
     hearts = []
     spades = []
     clubs = []
-    merged_cards = sorted(hole_cards,community_cards)
+    merged_cards = sorted(hole_cards+community_cards)
     for card in merged_cards:
         if card[1] == "Diamonds":
             diamonds.append(card)
@@ -68,5 +68,18 @@ def flush_ranking(flush_list):
         flush_list.pop()
     return flush_list
 
-flush_check(hero_hole,community_cards)
-flush_check(villian_hole,community_cards)
+def compare_flushes(flush_one, flush_two):
+    # compare to flushes and returns the best, if tie returns empty list
+    flush_one = sorted(flush_one,reverse=True)
+    flush_two = sorted(flush_two,reverse=True)
+    if flush_one[0][0] == flush_two[0][0]:
+        return []
+    elif flush_one[0][0] > flush_two[0][0]:
+        return flush_one
+    else:
+        return flush_two
+print(hero_hole)
+print(villian_hole)
+print(community_cards)
+print(flush_check(hero_hole,community_cards))
+print(flush_check(villian_hole,community_cards))
