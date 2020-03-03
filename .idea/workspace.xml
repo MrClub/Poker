@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8cc4d51-a234-49ec-b450-6f0ae6ec6ed6" name="Default Changelist" comment="Testing on a straight checker">
-      <change beforePath="$PROJECT_DIR$/flush_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/flush_check.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hand_rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/hand_rank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/straight_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/straight_check.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/straight_flush_check.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
