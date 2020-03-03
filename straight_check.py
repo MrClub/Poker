@@ -43,6 +43,7 @@ def straight_check(hole_cards,community_cards):
     # below check the straight length and trims it to the best five
     if len(straight_list) < 5:
         straight_list =[]
+        return []
     if len(straight_list) == 6:
         straight_list = sorted(straight_list, reverse=True)
         straight_list.pop()

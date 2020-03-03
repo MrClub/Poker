@@ -1,5 +1,6 @@
 # This will check for flushes
-# TODO write something to rank flushes
+# TODO write something to rank flushes,but also remembered that flushes aren't just ranked by high card. ie the
+#todo player with the higher suited hole card in a similar flush wins
 
 import dealer
 import random
@@ -78,8 +79,13 @@ def compare_flushes(flush_one, flush_two):
         return flush_one
     else:
         return flush_two
+
+
+"""test_hero = [[7,"Hearts"],[2,"Hearts"]]
+test_villian = [[8,"Hearts"],[10,"Hearts"]]
+test_community = [[3, 'Clubs'], [8, 'Spades'], [12, 'Hearts'], [13, 'Hearts'], [11, 'Hearts']]
 print(hero_hole)
 print(villian_hole)
 print(community_cards)
 print(flush_check(hero_hole,community_cards))
-print(flush_check(villian_hole,community_cards))
+print(flush_check(villian_hole,community_cards))"""
