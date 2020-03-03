@@ -21,7 +21,7 @@ def straight_check(hole_cards,community_cards):
     count = 0
     straight_number = merged_cards[0][0]
     straight_list =[]
-    print(merged_cards)
+    #print(merged_cards)
     for card in merged_cards:
         if wheel_straight_check(merged_cards,straight_list):
             straight_list.append(merged_cards[-1])
@@ -38,8 +38,6 @@ def straight_check(hole_cards,community_cards):
             straight_number = card[0]
             straight_list =[card]
 
-    print(straight_list)
-    print(len(straight_list))
     # below check the straight length and trims it to the best five
     if len(straight_list) < 5:
         straight_list =[]
@@ -52,7 +50,7 @@ def straight_check(hole_cards,community_cards):
         straight_list.pop()
         straight_list.pop()
     straight_list=sorted(straight_list,reverse=True)
-    print(straight_list)
+
     return straight_list
 
 def wheel_straight_check(merged_cards,straight_list):
@@ -75,7 +73,7 @@ def compare_straights(straight_one, straight_two):
     else:
         return []
 
-test_hole = [[2, 'Hearts'], [3, 'Hearts']]
+"""test_hole = [[2, 'Hearts'], [3, 'Hearts']]
 test_community = [[4, 'Hearts'], [5, 'Hearts'], [6, 'Diamonds'], [8, 'Clubs'], [13, 'Spades'],]
 straight_check(hero_hole,community_cards)
-straight_check(test_hole,test_community)
+straight_check(test_hole,test_community)"""

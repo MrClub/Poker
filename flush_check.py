@@ -31,10 +31,10 @@ def flush_check(hole_cards,community_cards):
         else:
             clubs.append(card)
 
-    print(" Diamonds",diamonds,"\n",
+    """print(" Diamonds",diamonds,"\n",
           "Hearts",hearts,"\n",
           "Spades",spades,"\n",
-          "Clubs",clubs)
+          "Clubs",clubs)"""
 
     if len(diamonds) >= 5:
         diamonds = sorted(diamonds,reverse=True)
