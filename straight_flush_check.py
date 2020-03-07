@@ -36,13 +36,9 @@ def flush_check(merged_cards):
         else:
             clubs.append(card)
 
-    """print(" Diamonds",diamonds,"\n",
-          "Hearts",hearts,"\n",
-          "Spades",spades,"\n",
-          "Clubs",clubs)"""
-
     if len(diamonds) >= 5:
         if straight_check(diamonds):
+            # this checks for a straight in the suited cards
             return straight_check(diamonds)
         else:
             diamonds = sorted(diamonds,reverse=True)
@@ -85,6 +81,26 @@ def flush_ranking(flush_list):
         flush_list.pop()
         flush_list.pop()
     return flush_list
+
+def compare_flushes(flush_one, flush_two):
+    # compare to flushes and returns the best, if tie returns empty list
+    flush_one = sorted(flush_one,reverse=True)
+    flush_two = sorted(flush_two,reverse=True)
+    if flush_one[0][0] == flush_two[0][0]:
+        return []
+    elif flush_one[0][0] > flush_two[0][0]:
+        return flush_one
+    else:
+        return flush_two
+
+def compare_straights(straight_one, straight_two):
+    # compares two straights and returns the best
+    if straight_one[0][0] > straight_two[0][0]:
+        return straight_one
+    elif straight_two[0][0] > straight_one[0][0]:
+        return straight_two
+    else:
+        return []
 
 
 def straight_check(merged_cards):
