@@ -1,5 +1,6 @@
 # This will check for pairs,sets and full house from the hero's hole card.
 # TODO finish sets_pair_quads_sorter function to differentiate between diffent combos of cards
+# TODO set + two pair sorted into full house
 
 def quads_sets_pairs_check(hole_cards, community):
     # this checks hole and board cards for matches, return a list of matches and then returning leftovers
@@ -62,32 +63,44 @@ def sets_pair_quads_sorter(set_pairs_list, left_over_list):
         print("list 3", list_3)
 
         if list_3 == []:
-            # quads + set
-            first_card = set_pairs_list[0]
-            card_list1 = []
-            card_list2 = []
-            card_list1.append(first_card)
-            for card in set_pairs_list:
-                if card[0] == first_card[0]:
-                    if card not in card_list1:
-                        card_list1.append(card)
-                else:
-                    card_list2.append(card)
-            print(card_list1, "CardList1")
-            print(card_list2, "cardlist2")
-            if len(card_list1) == 4:
-                card_list2.pop()
-                card_list2.pop()
-                quad_hand = (card_list1 + card_list2)
+            # must be quads + set
+            if len(list_1) == 4:
+                list_2.pop()
+                list_2.pop()
+                quad_hand = (list_1 + list_2)
             else:
-                card_list1.pop()
-                card_list1.pop()
-                quad_hand = (card_list2 + card_list1)
+                list_1.pop()
+                list_1.pop()
+                quad_hand = (list_2 + list_1)
 
             return quad_hand, "Quads"
         else:
-            pass
             # set + two pair should return full house with set and highest pair
+            if len(list_1) == 3:
+                if list_2[0][0] > list_3[0][0]:
+                    full_house_hand = (list_1 + list_2)
+                    return full_house_hand, "Full House"
+                else:
+                    full_house_hand = (list_1 + list_3)
+                    return full_house_hand, "Full House"
+            elif len(list_2) == 3:
+                if list_1[0][0] > list_3[0][0]:
+                    full_house_hand = (list_2 + list_1)
+                    return full_house_hand, "Full House"
+                else:
+                    full_house_hand = (list_2 + list_3)
+                    return full_house_hand, "Full House"
+            else:
+                if list_1[0][0] > list_2[0][0]:
+                    full_house_hand = (list_3 + list_1)
+                    return full_house_hand, "Full House"
+                else:
+                    full_house_hand = (list_3 + list_2)
+                    return full_house_hand, "Full House"
+
+
+
+
 
     """if len(set_pairs_list) == 6:
         # quads + pair
@@ -105,9 +118,9 @@ def sets_pair_quads_sorter(set_pairs_list, left_over_list):
 """
 
 
-test_hero = [[7, "Hearts"], [8, "Clubs"]]
+test_hero = [[8, "Hearts"], [8, "Clubs"]]
 test_villian = [[12, "Clubs"], [13, "Spades"]]
-test_community = [[8, 'Spades'], [7, 'Spades'], [7, 'Diamonds'], [8, 'Diamonds'], [7, 'Clubs']]
+test_community = [[10, 'Spades'], [2, 'Spades'], [2, 'Diamonds'], [10, 'Diamonds'], [10, 'Clubs']]
 test_var1_sets_etc, test_var2_left_overs = quads_sets_pairs_check(test_hero, test_community)
 print(test_var1_sets_etc)
 print(test_var2_left_overs)
