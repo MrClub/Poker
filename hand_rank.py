@@ -3,7 +3,6 @@
 
 import straight_flush_check as sfc
 
-# TODO need to rewrite quads_sets_pairs_checker. To return true or false based on hand
 # TODO highest_card_rank needs to be rewritten to return True/False. Or does it? It's just a compare function..
 #
 
