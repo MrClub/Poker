@@ -227,21 +227,6 @@ def sets_pair_quads_sorter(set_pairs_list, left_over_list):
 
 
 
-    """if len(set_pairs_list) == 6:
-        # quads + pair
-        # set + set
-        # pair x 3
-    if len(set_pairs_list) == 5:
-        # set + pair
-    if len(set_pairs_list) == 4:
-        # quads
-        # pair x 2
-    if len(set_pairs_list) == 3:
-        # set
-    if len(set_pairs_list) == 2:
-        # pair
-"""
-
 
 test_hero = [[7, "Hearts"], [8, "Clubs"]]
 test_villian = [[12, "Clubs"], [13, "Spades"]]
@@ -251,68 +236,4 @@ print(test_var1_sets_etc)
 print(test_var2_left_overs)
 print(sets_pair_quads_sorter(test_var1_sets_etc, test_var2_left_overs))
 
-"""for card in hole_cards:
-        # this goes through cards and looks for pairs or sets
-        for community_card in community:
-            if card[0] == community_card[0]:
-                if card not in sets_pairs_list:
-                    sets_pairs_list.append(card)
-                if community_card not in sets_pairs_list:
-                    sets_pairs_list.append(community_card)
 
-for other_card in merged_cards:
-        # this figures out what is not in a pair or set and puts them in a list (eg so I can figure out highest card with a quad)
-        if other_card not in sets_pairs_list:
-            left_overs.append(other_card)
-    return sets_pairs_list, left_overs
-
-test_hero = [[7,"Hearts"],[7,"Clubs"]]
-test_villian = [[8,"Clubs"],[10,"Spades"]]
-test_community = [[3, 'Clubs'], [8, 'Spades'], [6, 'Diamonds'], [8, 'Hearts'], [7, 'Spades']]
-print(quads_sets_pairs_check(test_hero,test_community))
-
-def quads_sets_pairs_ranking(heros_quads_sets_pairs,
-                             villians_quads_sets_pairs):
-    # this will rank the quads,sets and pairs.
-    if len(heros_quads_sets_pairs) == 4:
-        if quads_or_two_pair_check(heros_quads_sets_pairs):
-            print("Hero has quads")
-        else:
-            print("Hero has two pair")
-
-
-    if len(villians_quads_sets_pairs) == 4:
-        if quads_or_two_pair_check(villians_quads_sets_pairs):
-            print("Villian has quads")
-        else:
-            print("Villian has two pair")
-
-    if len(heros_quads_sets_pairs) == 3:
-        print("Hero has a set")
-    if len(villians_quads_sets_pairs) == 3:
-        print("Villian has a set")
-    if heros_quads_sets_pairs == []:
-        print("Hero has nothing")
-    if villians_quads_sets_pairs == []:
-        print("Villian has nothing")
-    if len(heros_quads_sets_pairs)  == 2:
-        print("hero has a pair")
-    if len(villians_quads_sets_pairs) == 2:
-        print("Villian has a pair")
-
-def quads_or_two_pair_check(hand_to_check):
-    # this will check if the list is quads or two pair. return true for quads, false for two pair
-    count = 0
-    for card in hand_to_check:
-        if card[0] == hand_to_check[0][0]:
-            count +=1
-    if count == 4:
-        print("True")
-        return True
-    else:
-        print("False")
-        return False
-
-test_hero = [[7,"Hearts"],[7,"Clubs"]]
-test_villian = [[8,"Clubs"],[10,"Spades"]]
-test_community = [[3, 'Clubs'], [8, 'Spades'], [6, 'Diamonds'], [8, 'Hearts'], [7, 'Spades']]"""
