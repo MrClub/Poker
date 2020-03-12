@@ -2,6 +2,8 @@
 # coherent whole
 
 import straight_flush_check as sfc
+import quads_sets_pairs_checker as qspc
+import highest_card_rank as hcr
 
 # TODO highest_card_rank needs to be rewritten to return True/False. Or does it? It's just a compare function..
 #

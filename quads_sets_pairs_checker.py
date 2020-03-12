@@ -23,10 +23,13 @@ def quads_sets_pairs_check(hole_cards, community):
     for card in merged_cards:
         if card not in sets_pairs_list:
             left_overs.append(card)
+
     sets_pairs_list = sorted(sets_pairs_list, reverse=True)
     print(sets_pairs_list)
     left_overs = sorted(left_overs, reverse=True)
     print(left_overs)
+    if not sets_pairs_list:
+        return [], left_overs
     return sets_pairs_list, left_overs
 
 
