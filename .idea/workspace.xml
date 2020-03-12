@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8cc4d51-a234-49ec-b450-6f0ae6ec6ed6" name="Default Changelist" comment="Testing on a straight checker">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hand_rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/hand_rank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/highest_card_rank.py" beforeDir="false" afterPath="$PROJECT_DIR$/highest_card_rank.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quads_sets_pairs_checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/quads_sets_pairs_checker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
