@@ -2,6 +2,7 @@
 # coherent whole
 
 # TODO tidy up the return functions in flush_check and straight check to include a 2nd variable with hand name
+# TODO rewrite the return functions for flush and straight check
 
 
 test_hero = [[13,"Hearts"],[12,"Hearts"]]
@@ -186,10 +187,15 @@ def sets_pair_quads_sorter(set_pairs_list, left_over_list):
 
 def straight_flush_check(hole_cards,community_cards):
     merged_cards = sorted(hole_cards+community_cards)
-    if flush_check(merged_cards):
-        print(flush_check(merged_cards))
+    hand, hand_title = flush_check(merged_cards)
+    if hand == []:
+        hand, hand_title = straight_check(merged_cards)
+        if hand == []:
+            return [], "Nothing"
     else:
-        print(straight_check(merged_cards))
+        return hand, hand_title
+
+
 
 
 def flush_check(merged_cards):
@@ -242,7 +248,7 @@ def flush_check(merged_cards):
             if len(clubs) == 6 or len(clubs) == 7:
                 clubs = flush_ranking(clubs)
             return clubs, "Flush"
-    return []
+    return [], "Nothing"
 
 
 
@@ -301,7 +307,7 @@ def straight_check(merged_cards):
     # below check the straight length and trims it to the best five
     if len(straight_list) < 5:
         straight_list =[]
-        return []
+        return [], "Nothing"
     if len(straight_list) == 6:
         straight_list = sorted(straight_list, reverse=True)
         straight_list.pop()
@@ -311,7 +317,7 @@ def straight_check(merged_cards):
         straight_list.pop()
     straight_list=sorted(straight_list,reverse=True)
 
-    return straight_list
+    return straight_list, "Straight"
 
 def wheel_straight_check(merged_cards,straight_list):
     if len(straight_list) == 4:  # this is to check if 2,3,4,5 and there is an ace and no 6. ie wheel straight
